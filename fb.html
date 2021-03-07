@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+	<style type="text/css">
+	html{
+		font-family: "Arial";
+	}
+
+	*{
+		margin:0;
+		padding:0;
+		box-sizing: border-box;
+	}
+
+	body{
+		background-color: #ccc;
+	}
+
+	.container{
+		margin-top: 50px;
+		display: flex;
+		flex-direction: row
+	}
+	
+	.left{
+		width: 50%;
+		position:relative;
+	}
+
+	.wrapper{
+		position: absolute;
+		left: 10%;
+		top: 30%;
+	}
+
+	h1{
+		color:  #1877f2;
+		font-size:32px;
+	}
+
+	.wrapper p {
+		font-size: 24px;
+	}
+
+	.right{
+		width:40%;
+		margin-left: 30px;
+	}
+
+	form{
+		background-color: white;
+		border-radius: 10px;
+		padding:20px 0 10px 20px;
+	}
+
+
+	input[type="text"],
+	input[type="password"]{
+		font-family: "Arial";
+		width: 95%;
+		padding:9px;
+	}
+
+	input[type="password"]{
+		margin-top: 15px;
+	}
+
+	button{
+		background-color: #1877f2;
+		width: 95%;
+		text-align: center;
+		margin-top: 15px;
+		border:none;
+		padding: 10px 0;
+		color: #fafafa;
+		font-weight: 600;
+		font-size: 18px;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+
+	#forgetPassword{
+		display: block;
+		margin-top: 14px;
+		text-decoration: none;
+		text-align: center;
+		color: #1877f2;
+	}
+
+	.horizontalLine{
+		border-top: 1px solid #ccc;
+	}
+
+	.createNew{
+	  	background-color: #42b72a;
+	  	width: 50%;
+	  	display: block;
+	  	margin:20px auto;
+	}
+
+	.createPage{
+		margin-top: 20px;
+		text-align: center;
+	}
+	.createPageBold{
+		text-decoration: none;
+		color: #212121;
+		font-weight: 600;
+	}
+
+	</style>
+</head>
+<body>
+
+	<div class="container">
+<!------------------ first child Div Start------------------------------------------------------------------>
+		<div class="left">
+			<div class="wrapper">
+				<h1>facebook</h1>
+				<p>Connect with friends and the world around you on Facebook.</p>
+			</div>
+		</div>
+<!------------------ first child Div Start------------------------------------------------------------------>
+         <!--************************************-->
+<!------------------ Second child Div Start------------------------------------------------------------------>
+		<div class="right">
+			<form>
+				<input type="text" placeholder="Email address or password"> <br />
+				<input type="password" placeholder="Password"><br/>
+				<button class="loginBtn"> Log In </button><br/>
+				<a href="" id="forgetPassword"> Forgot Password?</a><br/>
+				<div class="horizontalLine"></div>
+				<button class="createNew"> Create New Account </button>
+			</form>
+			<p class="createPage"><a href="" class="createPageBold">Create a Page</a> for a celebrity, band or business.</p>
+		</div> 
+<!------------------ Second child Div Start------------------------------------------------------------------>
+	</div>
+</body>
+</html>

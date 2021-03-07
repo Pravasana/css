@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>radiusborder</title>
+	<style type="text/css">
+		.first{
+			height:200px;
+			width:200px;
+			background-color:blue;
+			/*border-radius:50%;*/
+			/*border-radius:10px;*/
+			border-top-left-radius:10px;
+		}
+		.second{
+			height:150px;
+			width:300px;
+			background-color: cyan;
+			margin: auto;
+			position: relative;
+
+		}
+		.child{
+			height: 70px;
+			width:70px;
+			background-color: cyan;
+			transform: rotate(50deg);
+			position: absolute;
+			top:60%;
+			right: 5%;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="first"></div>
+	<div class="second">
+		<div class="child"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Galary</title>
+	<style>
+	/***********************   text and image middle and visible while cursor move  ****************************************/
+		.demo
+		{
+			height: 500px;
+			width:700px;
+			margin:auto;
+			position: relative;
+			box-shadow: 10px 10px 15px silver;
+			overflow: hidden;
+		}
+
+		img{
+			height: 100%;
+			width:100%;
+		}
+
+		.box{
+				background-color:gray;
+				opacity:0.5;
+				font-size: 15px;
+				color:black;
+				position: absolute;
+				left: 0;
+				right:0;
+				top:0;
+				bottom:0;
+				display: none;
+
+			}
+		.demo:hover .box{
+			display: block;
+		}
+		.r{
+			background-color: powderblue
+			color:white;
+			position: absolute;
+			top:30%;
+			left:20%;
+			right:20%;
+			/*margin:auto;*/
+			/*padding: 20px;*/
+			/*font-style: justify;*/
+			display: none;
+		}
+		.demo:hover .r{
+			display: block;
+		}
+
+		/*********************   header  sticky ****************************/
+			.h1header{
+		
+			background-color: lightgreen;
+			color: white;
+			padding: 20px;
+			font-size: 25px;
+			font-weight: bold;
+			text-align: center;
+			text-transform: capitalize;
+			position:sticky;
+			top:0;
+
+			}
+
+/****************************picture zoom in and out ********************************/
+			.demo1{
+				background-color: black;
+				height: 500px;
+				width :700px;
+				margin:auto;
+				border:2px dotted green;
+
+			}
+			.girlphoto{
+				transition: all 3s;
+			}
+			.demo1:hover .girlphoto{
+				transform: scale(0.5);
+				transform: scale(0.5); /** zoomOut **/
+			}
+/************* button fixed **********************************/
+
+			button{
+				position:fixed;
+				background-color: blue;
+				color: white;
+				margin: auto;
+				padding: 2px;
+				font-weight:bold;
+			}
+		
+
+	</style>
+</head>
+<body>
+
+	<div class="demo">
+
+		<h1 class="h1header">Galary</h1>
+
+		<img src="photo/tower.jpg">
+		<div class="box"></div>
+		<p class="r">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	
+		<button>Like</button>
+
+	<div class="demo1">
+		<img src="photo/girl.jpg" class="girlphoto">
+	</div>
+
+	
+
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>new</title>
+	<style type="text/css">
+		.demo{
+			height:500px; 
+			width:600px;
+			margin:auto;
+			box-shadow: 10px 10px 10px blue;
+			/*border-style: 20px dotted red;*/
+			position: relative;
+
+
+		}
+		img{
+			height: 100%;
+			width: 100%;
+			/*border-right: 20px red;*/
+
+		}
+		.box{
+			
+			background-color: yellow;
+			color: powderblue;
+			font-size: 20px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right:0;
+			bottom:0;
+			opacity: 0.5;	
+			display: none;	
+
+		}
+		.demo:hover .box{
+			display:block;
+		}
+		.r{
+			background-color: blue;
+			color: gray;
+			border:none;
+			position: absolute;
+			top:40%;
+			left:40%;
+		/*	right:40;
+			left:40;
+			opacity: 0.5;*/
+			display:none;
+		}
+
+		.demo:hover .r {
+			display: block;
+		}
+
+
+
+
+	</style>
+</head>
+<body>
+	<div class="demo">
+	
+		<img src="photo/bhunti.jpg">
+		<div class="box"></div>
+		<button class="r">show more</button>
+	</div>
+
+	
+</body>
+</html>

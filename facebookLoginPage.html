@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+	<style type="text/css">
+		
+		/*.body{
+			display: flex;
+			align-items:;
+			align-content: space-around;
+			justify-content: space-around;
+		}*/
+
+
+/*--------**Parent div**--------------------*/
+		.container{
+			display: flex;
+			justify-content: space-around;
+			background-color: lightgray ;
+			height:450px;
+			/*width:100%;*/
+			/*align-items:center;*/
+
+/*--------**Parent div**--------------------*/
+
+/*--------**child div**--------------------*/			
+		}
+		.left, .right{
+			display:flex;
+			flex-direction: column;
+		/*	align-content: center;*/
+			align-items: center;
+			justify-content:center;
+		}
+
+		.left{
+			width:500px;
+			align-items:flex-start;
+			/*align-content: center;*/
+			/*background-color: gray;*/
+		}
+/*--------**child div**--------------------*/
+
+	/*------** facebook**--------*/
+		.left h1{
+			font-family:'Arial';
+			font-size:50px;
+			color:#1877f2;
+			width:400px;
+			/*align-content: center;
+			/*align-items:center;*/
+		}
+	/*------** facebook Slogan**--------*/
+		.left p{
+			font-size:30px;
+			color:#1c1e21;
+			/*height:200px;*/
+			font-family: "Roboto Condensed", sans-serif;
+		}
+	/*------** facebook Slogan**--------*/
+
+		.right{
+			width:400px;
+			/*background-color: gray;/*delete it*/
+		}
+
+		form{
+			display: flex;
+			flex-direction: column;
+			background-color: white;
+		  /*----------------------------*/	
+			/*justify-content:center;*/
+			align-items: center;
+		 /*--------------------------- */		
+			border-radius:10px; 
+			width:400px;
+			padding:20px;
+			box-shadow:0 4px 8px silver;
+		}
+		form input{
+			width:100%;
+			padding:15px;
+			margin-bottom: 10px;
+			border-radius:5px;
+			border:1px solid lightgray;
+			font-size:16px;
+		}
+		.loginBtn{
+			background-color: #2471A3;
+			padding:10px;
+			/*text-align:center;*/
+			width:100%;
+			border-radius: 5px;
+			color:white;
+			font-size:20px;
+			font-family:'Arial';
+			font-weight:bold;
+			transition:0.5s;
+		}
+		.loginBtn:hover {
+			background-color:#4A96E1
+		}
+		.forget{
+			margin: 15px;
+			color:#1877f2;
+			font-family: 'Arial';
+			font-size:14px;
+		}
+		.createNew{
+			background-color: #42b72a;
+			padding: 15px;
+			border-radius:5px;
+			color:white;
+			font-size:17px;
+			font-family:'Arial';
+			font-weight: bold;
+			transition:0.5s;
+			border:none;
+		}
+		.createNew:hover {
+			background-color: green;
+		}
+
+		.right p{
+			font-family: 'Arial';
+			font-size:15px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+<!------------------ first child Div Start------------------------------------------------------------------>
+		<div class="left">
+			<h1>facebook</h1>
+			<p>Facebook helps you connect and share with the people in your life.</p>
+		</div>
+<!------------------ first child Div Start------------------------------------------------------------------>
+         <!--************************************-->
+<!------------------ Second child Div Start------------------------------------------------------------------>
+		<div class="right">
+			<form>
+				<input type="texbox" placeholder="Email address or password">
+				<input type="password" placeholder="password">
+				<button class="loginBtn"> Log In </button>
+				<a href="" class="forget"> Forgot Password</a>
+				<button class="createNew"> Create New Account </button>
+			</form>
+			<p><a href="">Create a Page</a> for a celebrity, band or business.</p>
+		</div> 
+<!------------------ Second child Div Start------------------------------------------------------------------>
+	</div>
+</body>
+</html>
